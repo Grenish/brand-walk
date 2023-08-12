@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainGradient {
+  background: rgb(222, 205, 245);
+  background: linear-gradient(
+    234deg,
+    rgba(222, 205, 245, 1) 0%,
+    rgba(123, 178, 191, 1) 50%,
+    rgba(27, 153, 139, 1) 100%
+  );
+}
