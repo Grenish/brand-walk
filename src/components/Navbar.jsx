@@ -11,6 +11,7 @@ import "./css/navbar.css";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [toggle, setToggle] = useState(false);
 
   const handleMenuOpen = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -21,13 +22,19 @@ const Navbar = () => {
       <div className="w-[200px] hidden md:block">
         <ul className="hidden sm:flex items-center space-x-4 justify-center">
           <li>
-            <Link to="/kids">Kids</Link>
+            <Link to="/kids" className="hover:text-somethingGreen">
+              Kids
+            </Link>
           </li>
           <li>
-            <Link to="/mens">Mens</Link>
+            <Link to="/mens" className="hover:text-somethingGreen">
+              Mens
+            </Link>
           </li>
           <li>
-            <Link to="/womens">Womens</Link>
+            <Link to="/womens" className="hover:text-somethingGreen">
+              Womens
+            </Link>
           </li>
         </ul>
       </div>
